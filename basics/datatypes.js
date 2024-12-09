@@ -40,6 +40,7 @@ console.log(typeof null);
 //  In dynamically typed languages, you do not need to explicitly declare the type of a variable when you create it.
 //  Instead, the type is inferred from the value assigned to the variable.
 const score=false
+ console.log(typeof score);
  
 
 // reference or non primtive
@@ -47,5 +48,24 @@ const score=false
 // reference directly allocated
 // array, objects, functions
 
+// ******************************************************************
 
+// stack(primitive)=>we get a copy of the value to use  , heap memory(non primitive)=>we get reference of the original value 
+
+let myYoutubename= "aayushgoel"
+
+let anothername= myYoutubename
+anothername= "aayushandcode"
+console.log(anothername);
+console.log(myYoutubename);
+
+let userone = {
+    email: "kushgoel998@gmail.com",
+    upi: "aayush"
+}
+
+let usertwo=userone
+usertwo.email= "hitesh@gmail.com"
+console.log(userone.email);
+console.log(usertwo.email);
 
